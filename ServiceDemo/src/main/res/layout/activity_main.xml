@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tickcoder.servicedemo.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--XXService-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="XXService(独立)"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xxservice_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="启动 XXService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xxservice_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="绑定 XXService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xxservice_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发送 XXService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xxservice_unbind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="解绑 XXService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xxservice_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="停止 XXService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!--YYService-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="YYService(非独立)"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_yyservice_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="启动 YYService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_yyservice_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="绑定 YYService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_yyservice_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发送 YYService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_yyservice_unbind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="解绑 YYService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_yyservice_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="停止 YYService"
+                    android:textSize="30sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

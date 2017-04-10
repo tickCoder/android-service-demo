@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tickcoder.yyservice">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.example.tickcoder.yyservice.permission.yy"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true">
+        <service
+            android:name=".YYService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.example.tickcoder.yyservice.permission.yy">
+            <intent-filter>
+                <action android:name="com.example.tickcoder.yyservice.action"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name=".BootBR"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
